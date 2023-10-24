@@ -1,0 +1,247 @@
+/*CSS General= Cuando tenemos etiquetas varias con en mismo estilo */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #222;
+    color: white;
+    font: 200 14px 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif ;
+    font-size: 14px;
+    font-weight: 200; CON LA PROPIEDAD FONT EL CODIGO QUEDA IGUAL, SOLO EN UNA LINEA*/
+    /*padding-left: 100px;
+    padding-right: 100px; LOS PADDING AHORA SOLO SE LE APLICARON A CLASE SECCION,
+     Y ASI EL BORDE AMARILLO ABARCA TODA LA PAGINA, AL IGUAL QUE LOS COLORES*/
+}
+h2{
+    font-size: 36px;
+    line-height: 36px;}
+h3{
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+}
+section{
+    padding: 10px 100px 10px 100px;
+    /*padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+p{
+    text-align: justify;
+}
+cite{
+    font-weight: 300;
+}
+i{
+    font-size: 24px;
+}
+/*PSEUDOCLASE ÁRA CAMBIAR COLOR MIENTRAS PASAS POR ELEMENTO*/
+i:hover{
+    color: #ffc900;
+}
+/*EL ELEMENTO a SEA SIEMPRE BLANCO EN TODOS LOS NAVEGADORES*/
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #ffc900;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+li{
+    float: left;
+    margin-right: 5px;
+}
+/*CSS id y Clases*= Se unsa ID cuando es un solo elemento, y Class cuando es mas de uno*/
+.hastag{
+    color: #ffc900;
+}
+#logo{
+    padding-top: 0%;
+}
+#experiencia{
+    background-color: white;
+    color: #222;
+}
+#Porfolio{
+    border-top: 1px solid yellow;
+}
+.masinfo button{
+    background-color: #ffc900;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+#sobremi .masinfo button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*GRID SOBRE MI*/
+#sobremi{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+#sobremi h2{
+    margin-bottom: 15px;
+}
+#sobremi .masinfo{
+    margin-top: 15px;
+}
+/*CARD PORTFOLIO*/
+.filaportfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+.card img, .card video, .card iframe{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card h3{
+    color:#ffc900;
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card .masinfo{
+    margin: 15px 0px 15px 0px;
+    height: 26px;
+}
+.card .masinfo button{
+    float: right;
+}
+.card h3, .card h4, .card p, .card .masinfo{
+    padding: 0 15px;
+}
+.card .sep{
+    margin: 0 5px 5px 0;
+    border: 1px solid #ffc900;
+}
+.seccion{
+    padding: 10px 100px 10px 100px;
+    /*padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+#redessociales{
+    margin-top: 20px;  
+}
+#inicio{
+    background-image: url(../img/inicio2.png);
+    min-height: 280px;/*La imagen mide 300, pero dimensiona en 280, 
+    porque el DIV tiene padding de 10 arriba y 10 abajo.*/
+    background-repeat: no-repeat;/*para que no se repita la imagen al tratar de dimencionar el espacio*/
+    background-size: cover;/*para que se adapte al total del espacio*/
+    padding-top: 75px;
+}
+/*CARD EXPERIENCIA*/
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+   display: flex;
+   justify-content: flex-end;
+}
+.cardexp li{
+    height: 30px;
+}
+/*FORMULARIO*/
+#contactar{
+    background-color: #ffc900;
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+input[type="submit"]{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    grid-column:2/3;
+    justify-self: end;
+}
+/*FOOTER*/
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float:left;
+}
+
